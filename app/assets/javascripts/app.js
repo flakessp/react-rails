@@ -27,16 +27,27 @@ var Store = new _.extend({}, EventEmitter.prototype, {
   }
 });
 
-var AppDispatcher = new FluxDispatcher();
+var AppDispatcher = new Flux.Dispatcher();
 
 AppDispatcher.register(function(payload) {
 var action = payload.actionType;
   switch (action) {
     case Constants.ADD_COMMENT:
       Store.addComment(payload.comment);
+      Store.emitChange();
       break;
     default:
     // no-op
 
   }
 });
+
+// Actions
+var Actions = new _.extend({}, {
+  addComment: function(params) {
+    AppDispatcher.dispatch({
+      actionType: Constants.ADD_COMMENT,
+      comment: params
+    })
+  }
+})
