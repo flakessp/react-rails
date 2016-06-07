@@ -24,6 +24,7 @@ gem 'react-rails'
 gem 'flux-rails-assets'
 gem 'lodash-rails'
 
+gem 'browserify-rails'
 gem 'sprockets-es6'
 
 # Use Capistrano for deployment

@@ -3,7 +3,7 @@
 @import 'settings';
 @import 'foundation';
 
-// If you'd like to include motion-ui the foundation-rails gem comes prepackaged with it, uncomment the 3 @imports, if you are not using the gem you need to install the motion-ui sass package.
+// If you'd like to include motion-ui, you need to install the motion-ui sass package.
 //
 // @import 'motion-ui/motion-ui';
 
@@ -30,7 +30,6 @@
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-menu;
-@include foundation-menu-icon;
 @include foundation-off-canvas;
 @include foundation-orbit;
 @include foundation-pagination;
@@ -46,7 +45,7 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 
-// If you'd like to include motion-ui the foundation-rails gem comes prepackaged with it, uncomment the 3 @imports, if you are not using the gem you need to install the motion-ui sass package.
+// If you'd like to include motion-ui, you need to install the motion-ui sass package.
 //
 // @include motion-ui-transitions;
 // @include motion-ui-animations;

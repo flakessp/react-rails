@@ -40,3 +40,13 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+.keep
+.DS_store
+/node_modules
+/client/node_modules
+/public/assets
+/webpack-assets.json
+/webpack-assets-deploy.json
+
+app/assets/javascripts/generated
